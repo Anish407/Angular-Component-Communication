@@ -1,0 +1,8 @@
+<div (click)='toggleData()' class='card center' style="background-color: coral">
+    <div>
+        <ng-content select='[my-comp-title]'> </ng-content>
+    </div>
+    <div *ngIf="showData == false">
+        <ng-content select='[my-comp-body]'></ng-content>
+    </div>
+</div>

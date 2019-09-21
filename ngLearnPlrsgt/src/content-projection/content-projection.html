@@ -1,0 +1,18 @@
+<div class="col-md-10 text-center" *ngFor="let item of employeeList">
+    <my-component>
+        <div my-comp-title>
+            <h2>{{item.name | customDecorator}}</h2>
+        </div>
+        <div my-comp-body>
+            <div my-comp-title>
+                Id :<span>{{item.id}}</span>
+            </div>
+            <div>
+                DOB :<span>{{item.dob}}</span>
+            </div>
+            <div>
+                Name :<span>{{item.name}}</span>
+            </div>
+        </div>
+    </my-component>
+</div>

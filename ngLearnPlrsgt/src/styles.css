@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+#toast-container > div {
+    opacity:1;
+    background-color: chartreuse;
+    color: black
+}
+
+body{
+    background-color: darkslategray;
+}
+
+li > a.active{
+color: chartreuse !important;
+}

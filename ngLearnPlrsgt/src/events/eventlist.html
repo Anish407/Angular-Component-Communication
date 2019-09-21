@@ -1,0 +1,19 @@
+<table class="table table-dark table-hover">
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>DOB</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of myEvent">
+            <td>{{item.id}}</td>
+            <td (click)="displayName(item.name)">{{item.name}}</td>
+            <td>{{item.dob}}</td>
+            <td><a [routerLink]="['/events',item.id]" routerLinkActive="router-link-active">Show Details </a> </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<button class="btn btn-primary">Click Me</button>
